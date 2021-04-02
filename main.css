@@ -1,0 +1,240 @@
+
+@font-face {
+    font-family: 'alegreya';
+    src: url('./fons/alegreyasanssc-black-webfont.woff2') format('woff2'),
+         url('./fons/alegreyasanssc-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --yellow: #ffbc2f;
+    --red: #d82727;
+    --black: #1b1b1b;
+    --titlesfont: 'Yanone Kaffeesatz', arial, sans-serif; 
+}
+
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    overflow: hidden;
+    min-width: 1310px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1300px;
+}
+
+body {
+    font: 16px /1.42 "roboto" , arial, sans-serif;
+    color: #212121;
+    -webkit-font-smoothing: antialiased;
+    -noz-osx-font-smoothing: grayscale;
+}
+ul {
+    margin: o;
+    padding: 0;
+} 
+
+ul>li {
+    list-style: none;
+}
+
+.hero {
+    height: 100vh;
+    min-height: 650px;
+    /*background: url('./img/bg/hero.jpg') center center / cover no-repeat;*/
+
+    background-image:url('./img/bg/hero.jpg') ;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 130px;
+}
+
+.header {
+    width: 1290px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 27px;
+}
+
+.mail {
+    text-decoration: none;
+    text-align: center;
+    color:inherit;
+}
+
+.mail__title {
+    margin-bottom: 3px;
+}
+
+.mail__content {
+    background: #212121;
+    color: var(--yellow);
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.hero__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1140px;
+    height: 72%;
+}
+
+.fade-slider {
+    width: 100%;
+    height: 100%;
+}
+
+.fade-slider__item {
+    background: url('./img/content/hero/slider_pic_1.png') center center / contain no-repeat;
+    height: 100%;
+}
+
+.fade-slider__text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-164%, -52%);
+}
+
+.lined-text {
+    font-family: "alegreya" Arial, sans-serif;
+    color: #fff;
+    font-size: 63px;
+    text-transform: uppercase;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-164%, -52%);
+}
+
+.lined-text__word {
+    background: #000;
+    padding: 0 17px 8px;
+    margin-top: -7px;
+}
+
+.lined-text__word--color-yellow {
+color: var(--yellow);
+}
+
+.lined-text__word:nth-child(2) {
+    margin-left: 8px;
+}
+
+/*.lined-text__word:nth-child(4) {
+    margin-left: 8px;
+}*/
+
+.filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.filter__iteam {
+    margin-right: 40px;
+}
+
+.filter__iteam:last-child {
+    margin-right: 0;
+}
+
+.filter__link {
+    font-family: var(--titlesfont);
+    text-transform: uppercase;
+    padding: 3px 21px;
+    color: var(--black);
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.filter__link:hover {
+    color:var(--red);
+}
+
+.filter__iteam--active .filter__link {
+color: var(--yellow);
+background: var(--black);
+}
+
+.products__item {
+    width: 302px;
+    height: 386px;
+    background: var(--yellow);
+    margin-bottom: 35px;
+}
+
+.ptoducts__content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.products__item:hover .products__desc {
+    transform: translateY(0%);  
+}
+
+.products__desc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 23px 30px;
+  background: rgba(35, 35, 35, .8);
+  font-size: 15px;
+  color: #fff ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translatey(100%);
+  transition: .3s;
+}
+
+.products__img {
+    display: block;
+    max-width: 90%;
+    max-height: 100%;
+}
+
+.products__desc-text {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.btn {
+text-transform: uppercase;
+font-family: var(--titlesfont);
+font-size: 24px;
+padding: 2px 30px;
+background: var(--black);
+color: var(--yellow);
+display: inline-block;
+text-decoration: none;
+}
+
+.btn:hover {
+    background: var(--red);
+    color: #fff ;
+}
