@@ -176,11 +176,27 @@ color: var(--yellow);
 background: var(--black);
 }
 
+.products__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -27px;
+}
+
 .products__item {
     width: 302px;
     height: 386px;
     background: var(--yellow);
     margin-bottom: 35px;
+    margin-left: 27px;
+}
+
+.products__item--color-black {
+    background: #232323;
+}
+
+.products__item--size-double {
+    width: 630px;
+    height: 544px;
 }
 
 .ptoducts__content {
