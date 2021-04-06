@@ -95,25 +95,64 @@ ul>li {
 }
 
 .sidebar {
+    width: 75px;
     position: absolute;
     left: 0;
     top: 0;
     bottom: 0;
-    width: 325px;
     background: #212121;
-    padding: 0 3% 0 4%;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    transition: width .3s;
 }
+
+.sidebar__menu {
+    position: absolute;
+    left: -400px;
+}
+
+.sidebar--opened .sidebar__menu {
+left: 0;
+width: 100%;
+text-align: center;
+}
+
+.sidebar__hamburger-icon {
+    width: 29px;
+    height: 29px;
+    fill: var(--yellow);
+}
+
+.sidebar__hamburger {
+    display: block;
+    position: absolute;
+    top: 27px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.sidebar--opened {
+    width: 325px;
+    padding: 0 3% 0 4%;
+}
+
+.sidebar--opened .sidebar__hamburger {
+    display: none;
+}
+
+.sidebar--opened .sidebar__header {
+    display: flex;
+}
+
 .sidebar__header {
     position: absolute;
     top: 29px;
     left: 0;
     right: 0;
-    display: flex;
+    display: none;
     justify-content: center;
 }
 

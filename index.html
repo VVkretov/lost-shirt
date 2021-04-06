@@ -40,7 +40,12 @@
                     </div>
                 </div>
             </div>
-      <aside class="sidebar">
+      <aside class="sidebar sidebar--opened">
+        <a href="#" class="sidebar__hamburger">
+            <svg class="sidebar__hamburger-icon">
+                <use xlink:href="./img/icons-sprite.svg#bars"></use>
+            </svg>
+        </a>
           <div class="sidebar__header">
               <a href="#" class="logo">
                   <img src="./img/content/logos/logo-main.png" alt="" class="logo__image">
@@ -51,7 +56,7 @@
                   </svg>
               </a>
           </div>
-          <nav class="side-menu">
+          <nav class="side-menu sidebar__menu">
               <ul class="side-menu__list">
                   <li class="side-menu__item">
                       <a href="#" class="side-menu__link">детская коллекция</a>
@@ -349,6 +354,7 @@
             </div>
         </footer>
        </div>
+       <script src="./scripts/sidebar-menu.js"></script>
     </body>
 
 </html>
