@@ -110,11 +110,39 @@ ul>li {
 }
 .sidebar__header {
     position: absolute;
-    top: 0;
+    top: 29px;
     left: 0;
     right: 0;
     display: flex;
     justify-content: center;
+}
+
+.sidebar__close {
+    position: absolute;
+    top: -4px;
+    right: 23px;
+}
+
+.sidebar__close-icon {
+    width: 29px;
+    height: 29px;
+    fill: var(--yellow);
+}
+
+.sidebar-menu__item {
+    margin-bottom: 20px;
+}
+
+.side-menu__link {
+    font-size: 20px;
+    color: var(--yellow);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--titlesfont);
+}
+
+.side-menu__link:hover {
+color: var(--red);
 }
 
 .fade-slider {
