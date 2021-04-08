@@ -187,7 +187,7 @@ color: var(--red);
 .fade-slider {
     width: 100%;
     height: 100%;
-    position: relative;
+   /* position: relative;*/
 }
 
 .fade-slider__item {
@@ -210,22 +210,48 @@ color: var(--red);
     background-image:url('./img/content/hero/slider_pic_1.png') ;
 }
 
+.fade-slider__item--style-tshirts .fade-slider__text {
+    left: 50%;
+    top: 50%;
+    transform: translateX(164%) translateY(-52%);
+}
+
 .fade-slider__item--style-games {
     background-image:url('./img/content/hero/slider_pic_2.png') ;
+}
+
+.fade-slider__item--style-games .fade-slider__text {
+    left: 136%;
+    bottom: 151px;
+    transform: translateX(-50%)
+}
+
+.fade-slider__item--style-games .lined-text {
+    align-items: center;
 }
 
 .fade-slider__item--style-present {
     background-image:url('./img/content/hero/slider_pic_3.png') ;
 }
 
-.fade-slider__text {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-164%, -52%);
+.fade-slider__item--style-present .fade-slider__text {
+    left: 68%;
+    bottom: 391px;
+    transform: translateY(-50%);
 }
 
-.fade-slider__text--one {
+.fade-slider__item--style-present .lined-text {
+    align-items: center;
+}
+
+.fade-slider__text {
+    position: absolute;
+    /*left: 50%;
+    top: 50%;
+    transform: translate(-164%, -52%);*/
+}
+
+/*.fade-slider__text--one {
     position: absolute;
     left: 117%;
     top: 74%;
@@ -237,7 +263,7 @@ color: var(--red);
     left: 81%;
     top: 63%;
     transform: translate(-164%, -52%);
-}
+}*/
 
 
 .lined-text {
