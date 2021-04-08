@@ -198,9 +198,15 @@ color: var(--red);
     left: 0;
     width: 100%;
     height: 100%;
+    opacity: 0;
+    transition: opacity .3s;
 }
 
-.fade-slider__item--style-thirts {
+.fade-slider__item--visible {
+    opacity: 1;
+}
+
+.fade-slider__item--style-tshirts {
     background-image:url('./img/content/hero/slider_pic_1.png') ;
 }
 
@@ -218,6 +224,21 @@ color: var(--red);
     top: 50%;
     transform: translate(-164%, -52%);
 }
+
+.fade-slider__text--one {
+    position: absolute;
+    left: 117%;
+    top: 74%;
+    transform: translate(-164%, -52%);
+}
+
+.fade-slider__text--two {
+    position: absolute;
+    left: 81%;
+    top: 63%;
+    transform: translate(-164%, -52%);
+}
+
 
 .lined-text {
     font-family: "alegreya" Arial, sans-serif;
