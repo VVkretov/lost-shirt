@@ -92,7 +92,7 @@ body {
 }
 
 .lined-text {
-    font-family: "alegreya" Arial, sans-serif;
+    font-family: "alegreya", Arial, sans-serif;
     color: #fff;
     font-size: 28px;
     text-transform: uppercase;
@@ -112,9 +112,21 @@ body {
     white-space: nowrap;
 }
 .lined-text__word--color-yellow {
-    color: var(--yellow);
-    }
+color: var(--yellow);
+}
 
-    .lined-text__word:nth-child(2n) {
-        margin-left: 8px;
-    }
+.lined-text__word:nth-child(2n) {
+    margin-left: 8px;
+}
+
+/* .slogan-text {
+    position: relative;
+}
+.slogan-text:before {
+    position: absolute;
+    content: '';
+    background-image: url('./img/decor/header-guys.png');
+    background-repeat: no-repeat;
+    width: 452px;
+    height: 290px;
+} */
